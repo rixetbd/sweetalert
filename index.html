@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/mainstyle.css">
+
+
+    <!-- Primary Meta Tags -->
+    <title>Minimal Sweetalert - RixetBD</title>
+    <meta name="title" content="Minimal Sweetalert - RixetBD">
+    <meta name="description"
+        content="A way to modify alerts in your games, websites, and applications is using Minimal SweetAlert. A typical JavaScript button is provided for the user to alter it. The button's background color, wording, and any extra notifications that depend on the user's click may all be changed. You can even add a new button and modify the existing one.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rixetbd.github.io/sweetalert">
+    <meta property="og:title" content="Minimal Sweetalert - RixetBD">
+    <meta property="og:description"
+        content="A way to modify alerts in your games, websites, and applications is using Minimal SweetAlert. A typical JavaScript button is provided for the user to alter it. The button's background color, wording, and any extra notifications that depend on the user's click may all be changed. You can even add a new button and modify the existing one.">
+    <meta property="og:image"
+        content="https://rixetbd.github.io/sweetalert/img/meta.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rixetbd.github.io/sweetalert">
+    <meta property="twitter:title" content="Minimal Sweetalert - RixetBD">
+    <meta property="twitter:description"
+        content="A way to modify alerts in your games, websites, and applications is using Minimal SweetAlert. A typical JavaScript button is provided for the user to alter it. The button's background color, wording, and any extra notifications that depend on the user's click may all be changed. You can even add a new button and modify the existing one.">
+    <meta property="twitter:image"
+        content="https://rixetbd.github.io/sweetalert/img/meta.png">
+
+</head>
+
+
+
+<body>
+
+
+    <section class="container">
+        <div class="text-center py-5">
+            <img src="img/logo.png" alt="" class="img-fluid" width="300px">
+        </div>
+
+        <div class="col-12">
+            <h4 class="text-center">Source Link</h4>
+
+            <code-block class="language-html line-numbers" data-line="2">
+                <pre>https://raw.githubusercontent.com/rixetbd/site-layout/main/alert/sweetalert2.min.css</pre>
+            </code-block>
+
+            <code-block class="language-html line-numbers" data-line="2">
+                <pre>https://raw.githubusercontent.com/rixetbd/site-layout/main/alert/sweetalert2.all.js</pre>
+            </code-block>
+
+            <p>Or,</p>
+            <a href="sweetalert2.min.zip" download class="btn btn-primary"><i class="fas fa-download"></i> Download</a>
+
+        </div>
+
+
+        <div class="col-12 py-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4 d-flex align-items-center">
+                                    <img src="img/alert-01.png" alt="" class="img-fluid screenshot">
+                                </div>
+                                <div class="col-sm-12 col-md-8 py-3">
+                                    <h6>01</h6>
+                                    <p>Success Message</p>
+                                    <button class="btn btn-sm btn-primary" onclick="show_success_message()">Check
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <code-block class="language-javascript line-numbers" data-line="2">
+                                <pre>
+Swal.fire(
+    'Good job!',
+    'You clicked the button!',
+    'success'
+    )
+</pre>
+                            </code-block>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 py-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4 d-flex align-items-center">
+                                    <img src="img/alert-02.png" alt="" class="img-fluid screenshot">
+                                </div>
+                                <div class="col-sm-12 col-md-8 py-3">
+                                    <h6>02</h6>
+                                    <p>A basic message</p>
+                                    <button class="btn btn-sm btn-primary" onclick="Anyone_can_use_a_SweetAlert()">Check
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <code-block class="language-javascript line-numbers" data-line="2">
+                                <pre>Swal.fire('Anyone can use a SweetAlert')</pre>
+                            </code-block>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 py-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4 d-flex align-items-center">
+                                    <img src="img/alert-03.png" alt="" class="img-fluid screenshot">
+                                </div>
+                                <div class="col-sm-12 col-md-8 py-3">
+                                    <h6>03</h6>
+                                    <p>A title with a text under</p>
+                                    <button class="btn btn-sm btn-primary" onclick="A_title_with_a_text_under()">Check
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <code-block class="language-javascript line-numbers" data-line="2">
+                                <pre>
+Swal.fire(
+  'The Internet?',
+  'That thing is still around?',
+  'question'
+)</pre>
+                            </code-block>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 py-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4 d-flex align-items-center">
+                                    <img src="img/alert-04.png" alt="" class="img-fluid screenshot">
+                                </div>
+                                <div class="col-sm-8 col-md-8 py-3">
+                                    <h6>04</h6>
+                                    <p>A modal with a title, an error icon, a text, and a footer</p>
+                                    <button class="btn btn-sm btn-primary" onclick="Oops_alert()">Check Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <code-block class="language-javascript line-numbers" data-line="2">
+                                <pre>
+Swal.fire({
+    icon: 'error',
+    title: 'Oops...',
+    text: 'Something went wrong!',
+    footer: '<a href="">Why do I have this issue?</a>'
+})</pre>
+                            </code-block>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 py-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4 d-flex align-items-center">
+                                    <img src="img/alert-05.png" alt="" class="img-fluid screenshot">
+                                </div>
+                                <div class="col-sm-12 col-md-8 py-3">
+                                    <h6>04</h6>
+                                    <p>Custom HTML description and buttons with ARIA labels</p>
+                                    <button class="btn btn-sm btn-primary" onclick="Custom_HTML_description()">Check
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <code-block class="language-javascript line-numbers" data-line="2">
+                                <pre>
+Swal.fire({
+    title: '<strong>HTML <u>example</u></strong>',
+    icon: 'info',
+    html:
+        'You can use <b>bold text</b>, ' +
+        '<a href="//sweetalert2.github.io">links</a> ' +
+        'and other HTML tags',
+    showCloseButton: true,
+    showCancelButton: true,
+    focusConfirm: false,
+    confirmButtonText:
+        '<i class="fa fa-thumbs-up"></i> Great!',
+    confirmButtonAriaLabel: 'Thumbs up, great!',
+    cancelButtonText:
+        '<i class="fa fa-thumbs-down"></i>',
+    cancelButtonAriaLabel: 'Thumbs down'
+})</pre>
+                            </code-block>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 py-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4 d-flex align-items-center">
+                                    <img src="img/alert-06.png" alt="" class="img-fluid screenshot">
+                                </div>
+                                <div class="col-sm-12 col-md-8 py-3">
+                                    <h6>04</h6>
+                                    <p>A dialog with three buttons</p>
+                                    <button class="btn btn-sm btn-primary" onclick="three_buttons()">Check Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <code-block class="language-javascript line-numbers" data-line="2">
+                                <pre>
+Swal.fire({
+    title: 'Do you want to save the changes?',
+    showDenyButton: true,
+    showCancelButton: true,
+    confirmButtonText: 'Save',
+    denyButtonText: `Don't save`,
+    }).then((result) => {
+    /* Read more about isConfirmed, isDenied below */
+    if (result.isConfirmed) {
+        Swal.fire('Saved!', '', 'success')
+    } else if (result.isDenied) {
+        Swal.fire('Changes are not saved', '', 'info')
+    }
+    })</pre>
+                            </code-block>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 py-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4 d-flex align-items-center">
+                                    <img src="img/alert-07.png" alt="" class="img-fluid screenshot">
+                                </div>
+                                <div class="col-sm-12 col-md-8 py-3">
+                                    <h6>04</h6>
+                                    <p>A custom positioned dialog</p>
+                                    <button class="btn btn-sm btn-primary" onclick="success_alert()">Check Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <code-block class="language-javascript line-numbers" data-line="2">
+                                <pre>
+Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: 'Your work has been saved',
+    showConfirmButton: false,
+    timer: 1500
+})</pre>
+                            </code-block>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 py-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4 d-flex align-items-center">
+                                    <img src="img/alert-08.png" alt="" class="img-fluid screenshot">
+                                </div>
+                                <div class="col-sm-12 col-md-8 py-3">
+                                    <h6>04</h6>
+                                    <p>Custom animation with <a href="https://animate.style/"
+                                            target="_blank">Animate.css</a> </p>
+                                    <button class="btn btn-sm btn-primary" onclick="Custom_animation()">Check
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <code-block class="language-javascript line-numbers" data-line="2">
+                                <pre>
+Swal.fire({
+    title: 'Custom animation with Animate.css',
+    showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+    },
+    hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+    }
+})</pre>
+                            </code-block>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 py-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4 d-flex align-items-center">
+                                    <img src="img/alert-09.png" alt="" class="img-fluid screenshot">
+                                </div>
+                                <div class="col-sm-12 col-md-8 py-3">
+                                    <h6>04</h6>
+                                    <p>A confirm dialog, with a function attached to the "Confirm"-button</p>
+                                    <button class="btn btn-sm btn-primary" onclick="Confirm_button_alert()">Check
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <code-block class="language-javascript line-numbers" data-line="2">
+                                <pre>
+Swal.fire({
+    title: 'Are you sure?',
+    text: "You won't be able to revert this!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+    if (result.isConfirmed) {
+        Swal.fire(
+        'Deleted!',
+        'Your file has been deleted.',
+        'success'
+        )
+    }
+})</pre>
+                            </code-block>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 py-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4 d-flex align-items-center">
+                                    <img src="img/alert-10.png" alt="" class="img-fluid screenshot">
+                                </div>
+                                <div class="col-sm-12 col-md-8 py-3">
+                                    <h6>04</h6>
+                                    <p>... and by passing a parameter, you can execute something else for "Cancel"</p>
+                                    <button class="btn btn-sm btn-primary" onclick="Cancel_passing()">Check Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <code-block class="language-javascript line-numbers" data-line="2">
+                                <pre>
+const swalWithBootstrapButtons = Swal.mixin({
+    customClass: {
+        confirmButton: 'btn btn-success',
+        cancelButton: 'btn btn-danger'
+    },
+    buttonsStyling: false
+    })
+    
+    swalWithBootstrapButtons.fire({
+    title: 'Are you sure?',
+    text: "You won't be able to revert this!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonText: 'Yes, delete it!',
+    cancelButtonText: 'No, cancel!',
+    reverseButtons: true
+    }).then((result) => {
+    if (result.isConfirmed) {
+        swalWithBootstrapButtons.fire(
+        'Deleted!',
+        'Your file has been deleted.',
+        'success'
+        )
+    } else if (
+        /* Read more about handling dismissals below */
+        result.dismiss === Swal.DismissReason.cancel
+    ) {
+        swalWithBootstrapButtons.fire(
+        'Cancelled',
+        'Your imaginary file is safe :)',
+        'error'
+        )
+    }
+})</pre>
+                            </code-block>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 py-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4 d-flex align-items-center">
+                                    <img src="img/alert-11.png" alt="" class="img-fluid screenshot">
+                                </div>
+                                <div class="col-sm-12 col-md-8 py-3">
+                                    <h6>04</h6>
+                                    <p>A message with a custom image</p>
+                                    <button class="btn btn-sm btn-primary" onclick="message_with_custom_image()">Check
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <code-block class="language-javascript line-numbers" data-line="2">
+                                <pre>
+Swal.fire({
+    title: 'Sweet!',
+    text: 'Modal with a custom image.',
+    imageUrl: 'https://unsplash.it/400/200',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'Custom image',
+})</pre>
+                            </code-block>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 py-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4 d-flex align-items-center">
+                                    <img src="img/alert-12.png" alt="" class="img-fluid screenshot">
+                                </div>
+                                <div class="col-sm-12 col-md-8 py-3">
+                                    <h6>04</h6>
+                                    <p>AJAX request example</p>
+                                    <button class="btn btn-sm btn-primary" onclick="AJAX_request()">Check Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <code-block class="language-javascript line-numbers" data-line="2">
+                                <pre>
+Swal.fire({
+    title: 'Submit your Github username',
+    input: 'text',
+    inputAttributes: {
+        autocapitalize: 'off'
+    },
+    showCancelButton: true,
+    confirmButtonText: 'Look up',
+    showLoaderOnConfirm: true,
+    preConfirm: (login) => {
+        return fetch(`//api.github.com/users/${login}`)
+        .then(response => {
+            if (!response.ok) {
+            throw new Error(response.statusText)
+            }
+            return response.json()
+        })
+        .catch(error => {
+            Swal.showValidationMessage(
+            `Request failed: ${error}`
+            )
+        })
+    },
+    allowOutsideClick: () => !Swal.isLoading()
+    }).then((result) => {
+    if (result.isConfirmed) {
+        Swal.fire({
+        title: `${result.value.login}'s avatar`,
+        imageUrl: result.value.avatar_url
+        })
+    }
+})</pre>
+                            </code-block>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <template id="code-block-template">
+        <style>
+            pre[class*="language-"] {
+                background: #2a2a2a;
+                color: white;
+                font-family: monospace;
+                font-size: 90%;
+                text-align: left;
+                white-space: pre;
+                word-spacing: normal;
+                word-break: normal;
+                word-wrap: normal;
+                line-height: 1.6;
+
+                -moz-tab-size: 2;
+                -o-tab-size: 2;
+                tab-size: 2;
+
+                -webkit-hyphens: none;
+                -moz-hyphens: none;
+                -ms-hyphens: none;
+                hyphens: none;
+
+                border-radius: .5em;
+                margin: .5em 0;
+                overflow: auto;
+                padding: 1em;
+            }
+
+            .token.comment,
+            .token.prolog,
+            .token.doctype,
+            .token.cdata {
+                color: hsl(0, 0%, 47%);
+            }
+
+            .token.punctuation {
+                opacity: .7;
+            }
+
+            .token.namespace {
+                opacity: .7;
+            }
+
+            .token.tag,
+            .token.boolean,
+            .token.number,
+            .token.deleted {
+                color: hsl(14, 58%, 55%);
+                /* #CF6A4C */
+            }
+
+            .token.keyword,
+            .token.property,
+            .token.selector,
+            .token.constant,
+            .token.symbol,
+            .token.builtin {
+                color: hsl(53, 89%, 79%);
+                /* #F9EE98 */
+            }
+
+            .token.attr-name,
+            .token.attr-value,
+            .token.string,
+            .token.char,
+            .token.operator,
+            .token.entity,
+            .token.url,
+            .language-css .token.string,
+            .style .token.string,
+            .token.variable,
+            .token.inserted {
+                color: hsl(76, 21%, 52%);
+                /* #8F9D6A */
+            }
+
+            .token.atrule {
+                color: hsl(218, 22%, 55%);
+                /* #7587A6 */
+            }
+
+            .token.regex,
+            .token.important {
+                color: hsl(42, 75%, 65%);
+                /* #E9C062 */
+            }
+
+            .token.important,
+            .token.bold {
+                font-weight: bold;
+            }
+
+            .token.italic {
+                font-style: italic;
+            }
+
+            .token.entity {
+                cursor: help;
+            }
+
+            /* Markup */
+            .language-markup .token.tag,
+            .language-markup .token.attr-name,
+            .language-markup .token.punctuation {
+                color: hsl(33, 33%, 52%);
+                /* #AC885B */
+            }
+
+            /* Make the tokens sit above the line highlight so the colours don't look faded. */
+            .token {
+                position: relative;
+                z-index: 1;
+            }
+
+            .line-highlight {
+                background: hsla(0, 0%, 33%, 0.25);
+                /* #545454 */
+                background: linear-gradient(to right, hsla(0, 0%, 33%, .1) 70%, hsla(0, 0%, 33%, 0));
+                /* #545454 */
+                border-bottom: 1px dashed hsl(0, 0%, 33%);
+                /* #545454 */
+                border-top: 1px dashed hsl(0, 0%, 33%);
+                /* #545454 */
+                left: 0;
+                line-height: inherit;
+                margin-top: 0.75em;
+                /* Same as .prism’s padding-top */
+                padding: inherit 0;
+                pointer-events: none;
+                position: absolute;
+                right: 0;
+                white-space: pre;
+                z-index: 0;
+            }
+
+            .line-highlight:before,
+            .line-highlight[data-end]:after {
+                background-color: hsl(215, 15%, 59%);
+                /* #8794A6 */
+                border-radius: 999px;
+                box-shadow: 0 1px white;
+                color: hsl(24, 20%, 95%);
+                /* #F5F2F0 */
+                content: attr(data-start);
+                font: bold 65%/1.5 sans-serif;
+                left: .6em;
+                min-width: 1em;
+                padding: 0 .5em;
+                position: absolute;
+                text-align: center;
+                text-shadow: none;
+                top: .4em;
+                vertical-align: .3em;
+            }
+
+            .line-highlight[data-end]:after {
+                bottom: .4em;
+                content: attr(data-end);
+                top: auto;
+            }
+
+            pre[data-line] {
+                position: relative;
+                padding: 1em 0 1em 3em;
+            }
+
+            .line-highlight {
+                position: absolute;
+                left: 0;
+                right: 0;
+                padding: inherit 0;
+                margin-top: 1em;
+                /* Same as .prism’s padding-top */
+
+                background: hsla(24, 20%, 50%, .08);
+                background: linear-gradient(to right, hsla(24, 20%, 50%, .1) 70%, hsla(24, 20%, 50%, 0));
+
+                pointer-events: none;
+
+                line-height: inherit;
+                white-space: pre;
+            }
+
+            .line-highlight:before,
+            .line-highlight[data-end]:after {
+                content: attr(data-start);
+                position: absolute;
+                top: .4em;
+                left: .6em;
+                min-width: 1em;
+                padding: 0 .5em;
+                background-color: hsla(24, 20%, 50%, .4);
+                color: hsl(24, 20%, 95%);
+                font: bold 65%/1.5 sans-serif;
+                text-align: center;
+                vertical-align: .3em;
+                border-radius: 999px;
+                text-shadow: none;
+                box-shadow: 0 1px white;
+            }
+
+            .line-highlight[data-end]:after {
+                content: attr(data-end);
+                top: auto;
+                bottom: .4em;
+            }
+
+            .line-numbers .line-highlight:before,
+            .line-numbers .line-highlight:after {
+                content: none;
+            }
+
+            pre[class*="language-"].line-numbers {
+                position: relative;
+                padding-left: 3.8em;
+                counter-reset: linenumber;
+            }
+
+            pre[class*="language-"].line-numbers>code {
+                position: relative;
+                white-space: inherit;
+            }
+
+            .line-numbers .line-numbers-rows {
+                position: absolute;
+                pointer-events: none;
+                top: -0.13em;
+                /* wtf */
+                left: -3.8em;
+                width: 3em;
+                /* works for line-numbers below 1000 lines */
+                border-right: 1px solid #999;
+
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            .line-numbers-rows>span {
+                pointer-events: none;
+                display: block;
+                counter-increment: linenumber;
+            }
+
+            .line-numbers-rows>span::before {
+                content: counter(linenumber);
+                color: #999;
+                display: block;
+                padding-right: 0.8em;
+                text-align: right;
+            }
+
+            #copy-button {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                cursor: pointer;
+            }
+        </style>
+    </template>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="dist/sweetalert2.all.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/prism-for-wc.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/alert.js"></script>
+
+    <script>
+        $('#deleteBtn').click(() => {
+
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+
+                    Swal.fire(
+                        'Deleted!',
+                        'Your file has been deleted.',
+                        'success'
+                    )
+
+                }
+            })
+
+        });
+
+        $('#successBtn').click(() => {
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Your work has been saved',
+                showConfirmButton: false,
+                timer: 1500
+            })
+        });
+    </script>
+
+
+</body>
+
+</html>
